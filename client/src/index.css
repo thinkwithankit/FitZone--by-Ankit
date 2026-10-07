@@ -1,0 +1,244 @@
+@import "tailwindcss";
+
+/* ================================================================
+   FITZONE THEME SYSTEM — Dark & Light CSS Custom Properties
+   ================================================================ */
+
+@layer base {
+  :root {
+    --font-heading: 'Outfit', 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* ─── DARK THEME (Default) ─────────────────────────────── */
+    --bg-primary: #0c0d12;
+    --bg-secondary: #0a0b0f;
+    --bg-card: #111219;
+    --bg-card-hover: #13141e;
+    --bg-elevated: #12141c;
+    --bg-input: #0e0f16;
+    --bg-badge: #1a1b24;
+
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --text-heading: #ffffff;
+
+    --border-default: rgba(255, 255, 255, 0.08);
+    --border-subtle: rgba(255, 255, 255, 0.05);
+    --border-hover: rgba(239, 68, 68, 0.40);
+
+    --overlay-hero: rgba(10, 11, 16, 0.85);
+    --overlay-card: linear-gradient(to top, #0c0d12 0%, rgba(12, 13, 18, 0.4) 60%, transparent 100%);
+    --shadow-card: 0 8px 32px -8px rgba(0, 0, 0, 0.5);
+
+    --accent: #ef4444;
+    --accent-hover: #f87171;
+    --accent-bg: rgba(239, 68, 68, 0.12);
+    --accent-border: rgba(239, 68, 68, 0.35);
+
+    --scrollbar-track: #0c0d12;
+    --scrollbar-thumb: #27272a;
+  }
+
+  /* ─── LIGHT THEME ─────────────────────────────────────── */
+  .light {
+    --bg-primary: #f8f9fc;
+    --bg-secondary: #f1f3f8;
+    --bg-card: #ffffff;
+    --bg-card-hover: #fafafa;
+    --bg-elevated: #ffffff;
+    --bg-input: #f4f5f9;
+    --bg-badge: #f0f1f6;
+
+    --text-primary: #1e2030;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+    --text-heading: #0f1117;
+
+    --border-default: rgba(0, 0, 0, 0.09);
+    --border-subtle: rgba(0, 0, 0, 0.06);
+    --border-hover: rgba(239, 68, 68, 0.45);
+
+    --overlay-hero: rgba(8, 10, 20, 0.72);
+    --overlay-card: linear-gradient(to top, #0c0d12 0%, rgba(12, 13, 18, 0.5) 60%, transparent 100%);
+    --shadow-card: 0 4px 24px -4px rgba(0, 0, 0, 0.12);
+
+    --accent: #e02424;
+    --accent-hover: #ef4444;
+    --accent-bg: rgba(224, 36, 36, 0.08);
+    --accent-border: rgba(224, 36, 36, 0.30);
+
+    --scrollbar-track: #f1f3f8;
+    --scrollbar-thumb: #cbd5e1;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* ─── SCROLLBAR ─────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* ─── UTILITY CLASSES USING THEME TOKENS ─────────────────── */
+.theme-bg {
+  background-color: var(--bg-primary);
+}
+
+.theme-bg-card {
+  background-color: var(--bg-card);
+}
+
+.theme-bg-elevated {
+  background-color: var(--bg-elevated);
+}
+
+.theme-bg-input {
+  background-color: var(--bg-input);
+}
+
+.theme-text {
+  color: var(--text-primary);
+}
+
+.theme-text-sec {
+  color: var(--text-secondary);
+}
+
+.theme-text-muted {
+  color: var(--text-muted);
+}
+
+.theme-heading {
+  color: var(--text-heading);
+}
+
+.theme-border {
+  border-color: var(--border-default);
+}
+
+.theme-shadow {
+  box-shadow: var(--shadow-card);
+}
+
+/* ─── COMPONENT STYLES ───────────────────────────────────── */
+.glass-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-card:hover {
+  border-color: var(--border-hover);
+}
+
+/* Glow Effects */
+.glow-red {
+  box-shadow: 0 0 35px -8px rgba(239, 68, 68, 0.45);
+}
+
+.glow-red-sm {
+  box-shadow: 0 0 18px -4px rgba(239, 68, 68, 0.35);
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(239, 68, 68, 0.55);
+}
+
+/* ─── SECTION BACKGROUNDS ────────────────────────────────── */
+.section-primary {
+  background-color: var(--bg-primary);
+}
+
+.section-secondary {
+  background-color: var(--bg-secondary);
+}
+
+/* ─── CARD STYLES ────────────────────────────────────────── */
+.fz-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-default);
+  box-shadow: var(--shadow-card);
+  transition: all 0.3s ease;
+}
+
+.fz-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-4px);
+}
+
+/* ─── INPUT STYLES ───────────────────────────────────────── */
+.fz-input {
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-default);
+  color: var(--text-primary);
+  transition: border-color 0.2s ease;
+}
+
+.fz-input:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.fz-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* ─── THEME TOGGLE ANIMATION ─────────────────────────────── */
+.theme-toggle-icon {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease;
+}
+
+/* ─── PROGRESS BAR ───────────────────────────────────────── */
+.progress-track {
+  background-color: var(--border-default);
+}
+
+/* ─── LIGHT MODE HERO OVERLAY ADJUSTMENT ─────────────────── */
+.light .hero-overlay-gradient {
+  background: linear-gradient(to right, rgba(8, 10, 20, 0.92) 0%, rgba(8, 10, 20, 0.75) 60%, transparent 100%);
+}
+
+/* ─── TRANSITION ALL ELEMENTS ON THEME SWITCH ───────────── */
+*,
+*::before,
+*::after {
+  transition-property: background-color, border-color, color, box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+}
+
+/* Don't slow down transforms and layout */
+.no-theme-transition,
+.no-theme-transition * {
+  transition-property: none !important;
+}

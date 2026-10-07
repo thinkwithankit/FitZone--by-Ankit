@@ -1,0 +1,369 @@
+{
+  "plans": [
+    {
+      "id": 1,
+      "name": "Basic Plan",
+      "slug": "basic",
+      "monthly_price": 999,
+      "yearly_price": 9990,
+      "currency": "₹",
+      "is_popular": false,
+      "description": "Ideal for beginners starting their fitness routine.",
+      "features": [
+        "Gym Access",
+        "Basic Training Plan",
+        "Locker Facility",
+        "Community Support"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Premium Plan",
+      "slug": "premium",
+      "monthly_price": 1499,
+      "yearly_price": 14990,
+      "currency": "₹",
+      "is_popular": true,
+      "description": "Best balance of coaching, nutrition and facilities.",
+      "features": [
+        "Gym Access",
+        "Personal Training (2 sessions)",
+        "Diet Plan",
+        "Locker Facility",
+        "Community Support"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Pro Plan",
+      "slug": "pro",
+      "monthly_price": 1999,
+      "yearly_price": 19990,
+      "currency": "₹",
+      "is_popular": false,
+      "description": "Complete elite coaching with 24/7 dedicated support.",
+      "features": [
+        "All Premium Features",
+        "Unlimited Personal Training",
+        "Advanced Training Plan",
+        "Nutrition Consultation",
+        "Priority Support"
+      ]
+    }
+  ],
+  "trainers": [
+    {
+      "id": 1,
+      "name": "Rahul Sharma",
+      "specialty": "Strength & Conditioning",
+      "experience_years": 7,
+      "bio": "Certified CSCS strength coach specializing in hypertrophy, Olympic lifts, and athletic power development.",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=600&auto=format&fit=crop&q=80",
+      "instagram": "https://instagram.com",
+      "facebook": "https://facebook.com",
+      "linkedin": "https://linkedin.com",
+      "certifications": "NSCA-CSCS, ACE Fitness Specialist"
+    },
+    {
+      "id": 2,
+      "name": "Priya Mehta",
+      "specialty": "Yoga & Wellness",
+      "experience_years": 6,
+      "bio": "Master yogi and mindfulness practitioner helping athletes develop mobility, core stability, and mental clarity.",
+      "rating": 5,
+      "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&auto=format&fit=crop&q=80",
+      "instagram": "https://instagram.com",
+      "facebook": "https://facebook.com",
+      "linkedin": "https://linkedin.com",
+      "certifications": "RYT-500 Yoga Alliance, Posture Specialist"
+    },
+    {
+      "id": 3,
+      "name": "Aman Verma",
+      "specialty": "CrossFit Expert",
+      "experience_years": 8,
+      "bio": "CrossFit Level 3 trainer who pushes members beyond mental limits with high-intensity metabolic conditioning.",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&auto=format&fit=crop&q=80",
+      "instagram": "https://instagram.com",
+      "facebook": "https://facebook.com",
+      "linkedin": "https://linkedin.com",
+      "certifications": "CrossFit-L3, Kettlebell Master"
+    },
+    {
+      "id": 4,
+      "name": "Neha Singh",
+      "specialty": "Cardio & Fitness",
+      "experience_years": 5,
+      "bio": "High-energy endurance specialist focusing on HIIT, aerobic capacity, VO2 max optimization, and fat shred.",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1548690312-e3b507d8c110?w=600&auto=format&fit=crop&q=80",
+      "instagram": "https://instagram.com",
+      "facebook": "https://facebook.com",
+      "linkedin": "https://linkedin.com",
+      "certifications": "NASM-CPT, Spin Master Instructor"
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "title": "Iron Forge Strength",
+      "category": "Strength",
+      "trainer_name": "Rahul Sharma",
+      "day_of_week": "Monday",
+      "time_slot": "06:00 AM - 07:15 AM",
+      "capacity": 20,
+      "booked_count": 15,
+      "intensity": "High"
+    },
+    {
+      "id": 2,
+      "title": "Metabolic HIIT Blast",
+      "category": "Cardio",
+      "trainer_name": "Neha Singh",
+      "day_of_week": "Monday",
+      "time_slot": "07:30 AM - 08:30 AM",
+      "capacity": 25,
+      "booked_count": 21,
+      "intensity": "Extreme"
+    },
+    {
+      "id": 3,
+      "title": "CrossFit WOD Titan",
+      "category": "CrossFit",
+      "trainer_name": "Aman Verma",
+      "day_of_week": "Tuesday",
+      "time_slot": "06:00 PM - 07:00 PM",
+      "capacity": 18,
+      "booked_count": 16,
+      "intensity": "Extreme"
+    },
+    {
+      "id": 4,
+      "title": "Vinyasa Flow & Restore",
+      "category": "Yoga",
+      "trainer_name": "Priya Mehta",
+      "day_of_week": "Wednesday",
+      "time_slot": "07:00 AM - 08:00 AM",
+      "capacity": 20,
+      "booked_count": 11,
+      "intensity": "Medium"
+    },
+    {
+      "id": 5,
+      "title": "Deadlift & Powerlifting Clinic",
+      "category": "Strength",
+      "trainer_name": "Rahul Sharma",
+      "day_of_week": "Thursday",
+      "time_slot": "06:30 PM - 07:45 PM",
+      "capacity": 15,
+      "booked_count": 13,
+      "intensity": "High"
+    },
+    {
+      "id": 6,
+      "title": "Cardio Shred Interval",
+      "category": "Cardio",
+      "trainer_name": "Neha Singh",
+      "day_of_week": "Friday",
+      "time_slot": "07:00 AM - 08:00 AM",
+      "capacity": 25,
+      "booked_count": 18,
+      "intensity": "High"
+    },
+    {
+      "id": 7,
+      "title": "Saturday Spartan Circuit",
+      "category": "CrossFit",
+      "trainer_name": "Aman Verma",
+      "day_of_week": "Saturday",
+      "time_slot": "09:00 AM - 10:30 AM",
+      "capacity": 30,
+      "booked_count": 27,
+      "intensity": "Extreme"
+    }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "membership_code": "FZ-MEM-1001",
+      "full_name": "Aditya Roy",
+      "email": "aditya.roy@example.com",
+      "phone": "+91 98711 22334",
+      "plan": "Premium Plan",
+      "billing_cycle": "monthly",
+      "amount_paid": 1499,
+      "payment_method": "UPI",
+      "start_date": "2026-09-01",
+      "expiry_date": "2026-10-01",
+      "status": "active",
+      "created_at": "2026-09-29T06:58:34.892Z"
+    },
+    {
+      "id": 2,
+      "membership_code": "FZ-MEM-1002",
+      "full_name": "Ananya Deshmukh",
+      "email": "ananya.d@example.com",
+      "phone": "+91 98123 45678",
+      "plan": "Pro Plan",
+      "billing_cycle": "yearly",
+      "amount_paid": 19990,
+      "payment_method": "Credit Card",
+      "start_date": "2026-08-15",
+      "expiry_date": "2027-08-15",
+      "status": "active",
+      "created_at": "2026-09-29T06:58:34.893Z"
+    },
+    {
+      "membership_code": "FZ-186055",
+      "full_name": "Ankit Patel",
+      "email": "ankit.patel@fitzone.com",
+      "phone": "+91 98765 00001",
+      "plan": "Premium Plan",
+      "billing_cycle": "yearly",
+      "amount_paid": 14990,
+      "payment_method": "UPI",
+      "start_date": "2026-09-29",
+      "expiry_date": "2027-09-29",
+      "status": "active",
+      "created_at": "2026-09-29T09:18:12.628Z",
+      "id": 3
+    },
+    {
+      "membership_code": "FZ-433452",
+      "full_name": "Ankit Patel",
+      "email": "patelankeet048@gmail.com",
+      "phone": "+918470942665",
+      "plan": "Basic Plan",
+      "billing_cycle": "monthly",
+      "amount_paid": 999,
+      "payment_method": "UPI",
+      "start_date": "2026-10-06",
+      "expiry_date": "2026-11-06",
+      "status": "active",
+      "created_at": "2026-10-06T08:29:28.201Z",
+      "id": 4
+    },
+    {
+      "membership_code": "FZ-319582",
+      "full_name": "Ankit Patel",
+      "email": "patelankeet048@gmail.com",
+      "phone": "+918470942665",
+      "plan": "Premium Plan",
+      "billing_cycle": "monthly",
+      "amount_paid": 1499,
+      "payment_method": "UPI",
+      "start_date": "2026-10-07",
+      "expiry_date": "2026-11-07",
+      "status": "active",
+      "created_at": "2026-10-07T17:51:49.701Z",
+      "id": 5
+    },
+    {
+      "membership_code": "FZ-234471",
+      "full_name": "priya verma ",
+      "email": "priyaverma123@gmail.com",
+      "phone": "9847063450",
+      "plan": "Pro Plan",
+      "billing_cycle": "monthly",
+      "amount_paid": 1999,
+      "payment_method": "UPI",
+      "start_date": "2026-10-07",
+      "expiry_date": "2026-11-07",
+      "status": "active",
+      "created_at": "2026-10-07T17:53:31.899Z",
+      "id": 6
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "member_name": "Amit Kumar",
+      "role_or_title": "Strength Member",
+      "rating": 5,
+      "comment": "Amazing environment, professional trainers and great results!",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "created_at": "2026-09-10"
+    },
+    {
+      "id": 2,
+      "member_name": "Sneha Patel",
+      "role_or_title": "Yoga & HIIT Member",
+      "rating": 5,
+      "comment": "FitZone has completely transformed my fitness journey. Highly recommended!",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
+      "created_at": "2026-09-15"
+    },
+    {
+      "id": 3,
+      "member_name": "Vikram Singh",
+      "role_or_title": "CrossFit Athlete",
+      "rating": 5,
+      "comment": "Best gym in the city with modern equipment and great support.",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+      "created_at": "2026-09-20"
+    }
+  ],
+  "inquiries": [
+    {
+      "id": 1,
+      "name": "Rohan Kapoor",
+      "email": "rohan@example.com",
+      "phone": "+91 99887 66554",
+      "subject": "Personal Training Consultation",
+      "message": "Interested in 1-on-1 coaching for powerlifting with Rahul Sharma.",
+      "status": "new",
+      "created_at": "2026-09-29T06:58:34.893Z"
+    },
+    {
+      "name": "Ankit Patel",
+      "email": "ankit.patel@fitzone.com",
+      "phone": "",
+      "subject": "Personal Training",
+      "message": "Looking forward to building the best version with Rahul Sharma!",
+      "status": "new",
+      "created_at": "2026-09-29T09:18:12.671Z",
+      "id": 2
+    }
+  ],
+  "subscribers": [
+    {
+      "id": 1,
+      "email": "fitnesslover@gmail.com",
+      "subscribed_at": "2026-09-29T06:58:34.893Z"
+    },
+    {
+      "id": 2,
+      "email": "ankit.patel@fitzone.com",
+      "subscribed_at": "2026-09-29T09:18:12.686Z"
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "booking_code": "BK-FZ-781",
+      "class_id": 1,
+      "class_title": "Iron Forge Strength",
+      "member_name": "Aditya Roy",
+      "member_email": "aditya.roy@example.com",
+      "member_phone": "+91 98711 22334",
+      "booking_date": "2026-10-02",
+      "time_slot": "06:00 AM - 07:15 AM",
+      "status": "confirmed",
+      "created_at": "2026-09-29T06:58:34.893Z"
+    },
+    {
+      "booking_code": "BK-FZ-1655",
+      "class_id": 1,
+      "class_title": "Iron Forge Strength",
+      "member_name": "Ankit Patel",
+      "member_email": "ankit.patel@fitzone.com",
+      "booking_date": "2026-09-29",
+      "time_slot": "06:00 AM - 07:15 AM",
+      "status": "confirmed",
+      "created_at": "2026-09-29T09:18:12.661Z",
+      "id": 2
+    }
+  ]
+}
